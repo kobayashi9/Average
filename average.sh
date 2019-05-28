@@ -10,4 +10,4 @@ for i in ${array[@]}
 do
 	goukei=`echo "scale=5; $goukei+$i" | bc`
 done
-echo "scale=5; $goukei / $2" | bc >> result.txt  
+echo "scale=5; $goukei / $2" | bc > $3  
